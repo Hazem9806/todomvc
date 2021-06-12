@@ -1,7 +1,7 @@
 {
-  "name": "rollup-todomvc",
-  "author": "Cypress DX Team",
-  "license": "MIT",
+  <!--"name": "rollup-todomvc",-->
+  <!--"author": "Cypress DX Team",-->
+  <!--"license": "MIT",-->
   "scripts": {
     "build": "rollup -c",
     "start": "http-server",
