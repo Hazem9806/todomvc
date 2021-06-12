@@ -1,5 +1,5 @@
 import {qs, qsa, $on, $parent, $delegate} from './helpers';
-
+ 
 const _itemId = element => parseInt($parent(element, 'li').dataset.id, 10);
 
 const _setFilter = currentPage => {
