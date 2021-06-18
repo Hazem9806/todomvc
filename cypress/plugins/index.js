@@ -20,3 +20,21 @@ module.exports = (on, config) => {
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
 }
+// .env
+REACT_APP_GOOGLE_CLIENTID = 'http://190889800752-r7q2j5r6o0sge8gjco4eq6sdnnvkvq10.apps.googleusercontent.com'
+REACT_APP_GOOGLE_CLIENT_SECRET = 'PPvWnfTwb9FsBTc_QD1KVRhn'
+GOOGLE_REFRESH_TOKEN = '1//0462cRqYB9nCvCgYIARAAGAQSNwF-L9Irj0Yo95PjS3bV1wFplhX6vO7acjlsZ-ytDWc-PoDOj7mn7sHCWVbP5pAXfd-WWACCPYI'
+// initial imports ...
+
+dotenv.config()
+
+export default (on, config) => {
+  // ...
+  config.env.googleRefreshToken = process.env.GOOGLE_REFRESH_TOKEN
+  config.env.googleClientId = process.env.REACT_APP_GOOGLE_CLIENTID
+  config.env.googleClientSecret = process.env.REACT_APP_GOOGLE_CLIENT_SECRET
+
+  // plugins code ...
+
+  return config
+}
